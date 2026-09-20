@@ -1,0 +1,6 @@
+interface:
+  display_name: "JMC Manuscript Workflow"
+  short_description: "Draft and revise rigorous JMC medicinal chemistry papers"
+  default_prompt: "Use $jmc-manuscript-workflow to review my project files, complete the required intake confirmation, and draft or revise a Journal of Medicinal Chemistry manuscript."
+policy:
+  allow_implicit_invocation: true
