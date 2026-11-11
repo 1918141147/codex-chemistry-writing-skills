@@ -2,6 +2,19 @@
 
 Use this architecture as a decision guide, not a rigid template. Omit sections unsupported by the user's project.
 
+## Default manuscript order
+
+Use this order for a new manuscript when the author has supplied no other structure. For a revision, keep the accepted section order unless the author asks to reorganize it.
+
+1. **Front matter.** Title, authors and affiliations, corresponding author and contribution notes where applicable, ABSTRACT, then KEYWORDS.
+2. **INTRODUCTION.** Disease or biological need → assay or mechanistic rationale → chemical opportunity and approved group work → current study.
+3. **RESULTS AND DISCUSSION.** Material supply and design → chemistry and Schemes → screening and SAR → lead selection and supported follow-up. Keep the chemistry and SAR linked by the design question. Add mechanistic and in vivo subsections only where supported.
+4. **CONCLUSION.** Principal SAR, reason for advancing the lead, and the main findings supported by the data.
+5. **EXPERIMENTAL SECTION.** Chemistry and Biological Evaluation. Within Chemistry, group general methods, preparation or isolation, synthetic procedures, and compound characterization. Within Biological Evaluation, order the assay methods and statistical analysis to follow the reported experiments.
+6. **Back matter.** ASSOCIATED CONTENT and Supporting Information, AUTHOR INFORMATION, ACKNOWLEDGMENTS, ABBREVIATIONS USED when needed, and REFERENCES. Include author roles, funding, and competing interests where applicable. Add a table-of-contents graphic when the submission requires one.
+
+Place figures, schemes, and tables near their first substantive discussion and synchronize callouts. Apply the [Word profile](format-and-qa.md#default-manuscript-profile) by element.
+
 ## Title
 
 Prefer an outcome-led medicinal chemistry title:
@@ -55,17 +68,14 @@ When a later oxidation campaign arose from the N-H-modified or ring-edited serie
 
 ### 3. Biological screening and SAR
 
-Open the subsection with one or two sentences that define the assay, the starting compounds' activity, and why the analogue set was compared under common conditions. Then analyze matched structural changes in a stable order.
+Define the assay and the readouts used for comparison. Organize the narrative around successive chemical questions. When N- and O-derivatization tested the same question about accessible polar groups, discuss them together. Connect their outcome to the subsequent choice to change ring state or the fused core when the project history supports that progression. Keep the contrast or exception that affects the next design decision.
 
-For each SAR paragraph:
+- Group related modifications to cover the relevant analogue series without repeating the table row by row.
+- Place the matched IDs and decisive readout next to each interpretive sentence when it helps the reader audit the claim, for example `(analogue vs parent, IC₅₀ 3.0 vs 8.0 μM)`.
+- Follow key comparisons with a short structural interpretation or design implication. An explanation should identify the chemical feature or context that might matter and stay within the evidence. A second sentence repeating the ranking adds little.
+- Explain why the selected molecule advanced, using the evidence for its activity and practical selection criteria. End with the lead and the purpose of its follow-up evaluation.
 
-1. identify the structural variable;
-2. compare relevant compounds or matched pairs;
-3. state the observed trend;
-4. give a cautious structural interpretation;
-5. end with the consequence for the next design decision.
-
-Avoid overinterpreting single-concentration data. Explicitly note when solubility, permeability, cytotoxicity, or assay interference has not been excluded. The final SAR paragraph should justify lead selection using activity, safety window, synthetic accessibility, and data quality as available.
+Use the [data and SAR rules](chemistry-pharmacology-rules.md#screening-data-and-potency) to choose comparable endpoints and calibrate the claim.
 
 ### 4. Lead validation and pharmacology
 
@@ -111,3 +121,4 @@ The Experimental Section records what was done; it does not carry the design arg
 - Figure 1 may combine representative natural products, design strategy, lead generation, and a supported mechanism overview.
 - Use a short Figure 1 caption—normally one or two sentences—without restating the complete mechanism.
 - A SAR figure caption should identify the representative derivatives and the biological readout without interpreting the results.
+- If a structure overview and screening table are combined, use panel-specific captions and in-text callouts. Follow the [editable layout checks](format-and-qa.md#screening-tables-and-composite-figures).

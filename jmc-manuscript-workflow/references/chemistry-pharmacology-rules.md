@@ -23,7 +23,7 @@ Do not describe a second-round oxidation series as if it were planned independen
 
 ## Quantities and molecular-weight calculations
 
-Before calculating, confirm whether the procedure should use the actual recorded scale, a fixed mass, or a fixed mmol scale. The earlier workflow exposed that `20 mg` and `0.050 mmol` are not interchangeable.
+Before calculating, confirm whether the procedure should use the actual recorded scale, a fixed mass, or a fixed mmol scale.
 
 - Treat molecular formulas in the user-designated NMR/HRMS record as authoritative.
 - Use average molar mass for preparative weighing unless the user explicitly requests exact/monoisotopic mass.
@@ -46,14 +46,20 @@ Use units and spacing consistently: `27.2 mg, 0.050 mmol`, `5 mL`, `0 °C`, `1 h
 
 Never add a color, physical form, workup operation, yield, or analytical datum not present in the source.
 
+## Screening data and potency
+
+- For each revised entry, verify compound identity, endpoint, concentration, assay batch, comparator, and the source of the mean and uncertainty. Keep author-approved values, units, and precision. If only a mean is revised, verify that its error term belongs to the same replicates.
+- Resolve a raw label that differs from the manuscript identifier against the structure, scheme, or author confirmation. Record the alias for traceability and use the confirmed manuscript identifier throughout the requested revision.
+- For authorized recalculation from Prism, use the raw replicates and recorded exclusion flags. Verify concentration and plate, and use the agreed denominator. For inhibition relative to the model mean, use `100 × (1 − treated mean / same-plate model mean)`. Apply a control correction only if the chosen protocol calls for it. If reporting SEM with a fixed model denominator, calculate it across the included treated replicates and record their count. Retain negative or above-100% results when supported by that normalization.
+- Report only the requested concentrations and distinguish initial screens, later screens, and dose–response assays. Resolve conflicting concentration labels before pooling or directly comparing batches.
+- Keep an unreported IC₅₀ distinct from an experimentally established bound. If the author explicitly requests a common display placeholder such as `>20` for missing values, retain that distinction in the working data, explain the convention in a general note, and exclude placeholder-only entries from potency claims.
+
 ## SAR rigor
 
-- Analyze matched comparisons whenever possible.
-- Distinguish potency, percent inhibition, efficacy, selectivity, and lack of cytotoxicity.
-- A single-concentration screen supports prioritization, not a full potency ranking.
-- Do not assign a hydrogen-bonding mechanism solely because N-alkylation reduced activity.
-- Do not attribute a trend to lipophilicity without measured or calculated support.
-- Use `consistent with`, `suggests`, or `supports` when alternative physicochemical explanations remain.
+- Compare matched compounds using comparable, experimentally reported IC₅₀ values or bounds where they distinguish the pair. Otherwise use the approved same-concentration inhibition data. Discuss any divergence only when it matters to the conclusion.
+- A single-concentration difference supports a screening trend or lead prioritization. A between-compound claim of statistical significance requires a corresponding test. Distinguish potency, inhibition, efficacy, selectivity, and viability.
+- Ground a structural explanation in the verified structures. Phrase contributions of a newly introduced group, such as an enone, as hypotheses when other structural changes could explain the trend. A decrease after N-methylation supports a role for the imide N–H in that matched series. Stronger assignments such as a specific hydrogen bond require independent evidence.
+- Justify lead selection with the supported trade-offs. Yield and starting-material supply can favor one analogue when potency does not. Use measured viability when available, and avoid attributing toxicity to an untested comparator.
 
 ## Pharmacology data gate
 
@@ -71,6 +77,8 @@ For each pharmacology claim, record:
 
 If only preliminary screening is available, write a limited screening/SAR subsection and identify a provisional lead. Do not create transcriptomic, pathway, cytokine, cognition, or disease-model results.
 
+When integrating a collaborator's accepted report, follow its supported experiment sequence and endpoints. Ask for extra raw data only if the requested claim needs it. Leave unsupported outcomes out of the text, figures, abstract, and conclusion.
+
 ## Mechanism language
 
 Build a claim-evidence ladder:
@@ -84,3 +92,5 @@ Build a claim-evidence ladder:
 | Direct binding/target engagement | direct target claim within assay limitations |
 
 Do not skip levels in this ladder.
+
+Name the measured endpoint in the text and diagram. For example, a decrease in p-p65/total p65 supports a claim about the phosphorylation ratio. Claims of decreased total p65 or altered nuclear localization require the corresponding measurements.

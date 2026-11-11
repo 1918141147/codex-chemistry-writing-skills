@@ -1,37 +1,33 @@
 ---
 name: jmc-manuscript-workflow
-description: Draft or revise Journal of Medicinal Chemistry manuscripts for natural-product semisynthesis, analogue optimization, SAR, and pharmacology. Use when the user supplies project files or asks for a JMC-style medicinal chemistry manuscript, section, or Word revision. Always complete the required study-theme, group-publication, and pharmacology-data confirmation gate before drafting.
+description: Draft, audit, or revise Journal of Medicinal Chemistry manuscripts for natural-product semisynthesis, analogue optimization, SAR, and pharmacology. Use for a new draft, a targeted Word revision, or reconciliation of screening data with manuscript text and figures.
 ---
 
 # JMC Manuscript Workflow
 
 Produce an evidence-grounded JMC manuscript whose chemistry, biological story, figures, experimental procedures, citations, and Word formatting agree with the user's latest accepted materials.
 
-## Mandatory intake gate
+## Choose the mode
 
-Before drafting or substantively revising manuscript prose, read [references/intake-gate.md](references/intake-gate.md) and obtain the three required confirmations:
-
-1. the study theme: compound class/scaffold, modification campaign, biological activity, disease/model context, and intended endpoint;
-2. the exact group publications and claims allowed for the “our group has long pursued…” background paragraph;
-3. when pharmacology data are absent or incomplete, whether to write chemistry only or wait for a minimal pharmacology package from the user.
-
-This gate applies even when the answers appear inferable from supplied files. State the inference and ask the user to confirm or correct it. File review and source inventory may proceed while waiting, but manuscript drafting must not.
+- **New manuscript or changed study scope:** Follow the [intake gate](references/intake-gate.md) before drafting. Confirm the study theme, approved group-publication claims, and pharmacology scope.
+- **Continuing revision:** Reopen the actual latest author-edited file and carry forward confirmed decisions. Confirm only unresolved matters that affect the requested changes. Apply an author-approved correction within its stated scope.
+- **Review before editing:** When the user asks for advice first, return an issue list with locations, data comparisons, and proposed changes. Leave the manuscript untouched until the user asks to apply them.
 
 ## Source authority
 
-- Treat the user's latest accepted manuscript and explicit current-turn instructions as the editing authority.
-- Treat experimental records, NMR/HRMS files, assay outputs, and designated pharmacology reports as data authorities within their scopes.
-- Treat PPT notes, Chinese comments, and annotations as author guidance or hypotheses, not verified scientific results.
+- Use the latest accepted manuscript for editing scope, structure, and formatting. Use the author's designated table, assay record, or report for the specified compounds and endpoints.
+- Keep confirmed data intact. Recalculate or supplement only the authorized rows or fields and trace any new value to its source.
+- Treat PPT notes, Chinese comments, and annotations as author guidance. Verify any scientific claim they propose against the relevant data or structure.
 - Treat example JMC papers as models for prose architecture, transitions, claim restraint, and caption logic; never copy their facts or language into the new study. Do not reproduce a published article's typeset page geometry in a submission manuscript. Follow the current JMC author template or guidelines for submission structure and page formatting.
-- When sources conflict, stop at the conflict, report it precisely, and ask which source governs. Do not silently reconcile chemistry, compound numbering, yields, assay results, or mechanisms.
+- When a conflict lacks a governing source, report the exact discrepancy and ask only about the affected claim. Continue work on independent changes.
 
 ## Workflow after confirmation
 
 1. Inventory and classify all supplied files using the source map in [references/intake-gate.md](references/intake-gate.md).
 2. Establish the current manuscript baseline, requested edit scope, and next short version name. Preserve all content outside scope.
-3. Build the section-level argument using [references/manuscript-architecture.md](references/manuscript-architecture.md).
-4. Draft chemistry, SAR, pharmacology, and experimental text under [references/chemistry-pharmacology-rules.md](references/chemistry-pharmacology-rules.md).
-5. Apply the JMC and Word conventions in [references/format-and-qa.md](references/format-and-qa.md).
+3. For the default section order and the narrative and SAR organization, read [manuscript architecture](references/manuscript-architecture.md).
+4. For numerical reconciliation, assay interpretation, chemistry, and experimental prose, read [chemistry and pharmacology rules](references/chemistry-pharmacology-rules.md).
+5. For a new draft or a full formatting pass, apply the [Word profile](references/format-and-qa.md#default-manuscript-profile). For a targeted edit, follow the accepted DOCX. Use [format and QA](references/format-and-qa.md) for figures, tables, and delivery checks.
 6. Run a claim-evidence check, chemistry consistency check, citation check, and document-format check before delivery.
 
 ## Writing boundaries
@@ -41,7 +37,7 @@ This gate applies even when the answers appear inferable from supplied files. St
 - Keep Results and Discussion chemistry concise and design-led; place reproducible operations and quantities in the Experimental Section or Supporting Information.
 - Base pharmacology claims only on supplied data. Separate observation, association, and mechanism; use cautious language when target engagement or causality is not demonstrated.
 - Verify current JMC author requirements and publication status of cited papers when current accuracy matters; do not hard-code mutable word limits or article-status information.
-- For Word edits, use minimal local changes, retain images and unrelated text, and create a new version rather than overwriting the accepted baseline.
+- For Word edits, use minimal local changes, retain unrelated content, and create a new version without overwriting the accepted baseline.
 
 ## Deliverables
 

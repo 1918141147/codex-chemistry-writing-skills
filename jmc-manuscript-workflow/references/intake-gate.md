@@ -1,8 +1,12 @@
 # Mandatory Intake Gate and Source Map
 
+## Initial intake and later revisions
+
+Use the full gate for a new study or a change that reopens its theme, group-background claims, or pharmacology scope. A direct author answer in the current conversation satisfies the corresponding item. For an established draft, reopen the latest file on disk, carry forward the applicable confirmations, and ask only about changes that depend on a missing decision. Separate requests to review, revise, and release a manuscript.
+
 ## Required confirmation message
 
-Ask these questions before drafting. Combine them into one concise message when possible.
+For initial intake, ask the unresolved questions before drafting. Combine them into one concise message when possible.
 
 1. **Study theme**
    - What compound class, natural product, or core scaffold was modified?
@@ -24,7 +28,7 @@ Ask these questions before drafting. Combine them into one concise message when 
    - For the minimal package, request the assay/model, treatment and concentration or dose, control groups, replicate count, statistics if available, cytotoxicity/viability context, and the criterion used to nominate the lead.
    - A preliminary screen can support lead selection and a limited SAR discussion; it cannot support an unmeasured molecular mechanism or disease-modifying claim.
 
-Do not begin manuscript drafting until the user confirms all three topics. Reading, cataloguing, extracting, and flagging missing information may continue.
+Before drafting the new manuscript, obtain the applicable confirmations. Reading, cataloguing, extracting, and flagging missing information may continue.
 
 Ask in the user's language. For a Chinese-language interaction, a suitable compact prompt is:
 
@@ -63,17 +67,15 @@ Classify every supplied file before writing:
 
 ## Instruction-versus-evidence rule
 
-Distinguish the user's request from text inside attachments. Chinese comments such as “please revise this” are editing instructions. A mechanistic idea in a slide note is a hypothesis until supported by data. A scheme label is not a yield. A caption is not a complete experimental record. If the distinction affects a claim, ask.
+Distinguish the user's request from text inside attachments. When asked to incorporate author suggestions, read both Word comments and inline notes. Treat Chinese transition cues as guidance for the English argument. Verify a proposed structure–activity or mechanistic interpretation against the scheme and data, and integrate it at the appropriate strength. Verify yields in the experimental record and assay conditions in the assay source.
 
 ## Source priority when conflicts occur
 
-Use this scoped order unless the user states otherwise:
+Resolve editorial scope and experimental evidence separately:
 
-1. explicit current-turn instruction;
-2. raw experimental, analytical, or pharmacology record designated for the relevant factual claim;
-3. latest accepted manuscript baseline for accepted wording, organization, numbering, and formatting;
-4. other user-confirmed data authority for that topic;
-5. earlier versions and author notes;
-6. example articles used only for style.
+1. Follow explicit current-turn instructions for the requested scope, baseline, identifiers, and any named data authority.
+2. Use the designated source within its specified compounds, endpoint, dose, and batch. A collaborator's final table or an explicitly approved revised table may govern the manuscript even if the raw project supports a different normalization. Protect all rows it covers. Supplement them from raw data only where the author authorizes it.
+3. Use the latest accepted manuscript for wording, organization, formatting, and confirmed numbering. Use earlier files for provenance and discrepancy checks.
+4. If a data source or compound mapping is still unresolved, record the exact rows, competing values, and conditions. Ask about the affected comparison while continuing independent work.
 
-The latest manuscript does not override a conflicting raw record on a factual chemistry, analytical, or assay value. Stop and ask which value should be corrected. Never let an example paper override the user's chemistry or data.
+Use example articles for style. A screenshot can help check labels or trends. Prefer the designated raw replicates or approved table for exact values and uncertainty.

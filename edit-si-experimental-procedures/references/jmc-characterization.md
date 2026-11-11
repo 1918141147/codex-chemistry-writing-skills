@@ -35,7 +35,7 @@ Apply the following rules:
 
 - Replace `Compound XX` with the supplied compound name/number and retain the manuscript's established naming convention.
 - Include physical form, isolated mass, and yield only when supplied or unambiguously calculated from supplied values. Otherwise use `[INSERT PHYSICAL FORM]`, `[INSERT MASS]`, or `[INSERT YIELD]`, or omit the field if the user asks for omission.
-- `purity, >95%` may be used as a project-wide house-style default only when the user explicitly supplies it. Treat it as user-supplied information, not as a value extracted from an analytical report. If the source contradicts it or it is unclear that the default applies to a particular compound, use `[INSERT PURITY]` and flag the issue rather than asserting `>95%`.
+- `purity, >95%` is this user's requested house-style default. Treat it as a user-supplied default, not as a value extracted from an analytical report. If the source contradicts it or it is unclear that the default applies to a particular compound, use `[INSERT PURITY]` and flag the issue rather than asserting `>95%`.
 - Use `[INSERT ¹H NMR DATA]`, `[INSERT ¹³C NMR DATA]`, or `[INSERT HRMS DATA]` for absent required blocks. If the user requests source-only output, omit unsupported blocks instead.
 - If a source contains HRMS only, fill only HRMS reliably; leave the other requested fields as placeholders or omit them according to the user's instruction.
 - Do not use the parent skill's `xx` convention for missing characterization fields; use the explicit `[INSERT ...]` placeholders in this module.
@@ -105,7 +105,7 @@ For every HRMS entry:
 6. Standard JMC characterization text reports `calcd` and `found` only. Add ppm to the manuscript text only when the user requests it.
 7. If any field conflicts, do not silently repair it. Format only the supported portion, place an appropriate `[INSERT ...]` marker if needed, and describe the conflict under `Data check`.
 
-Validated formatting examples:
+Validated formatting examples for this user's dataset:
 
 - `541-2. ... HRMS (ESI): m/z [M − H]⁻ calcd for C₄₁H₄₅FNO₄ 634.3338; found 634.3343.` The source is negative mode; reported error 0.7 ppm.
 - `541-3. ... HRMS (ESI): m/z [M + H]⁺ calcd for C₃₇H₄₆NO₄ 568.3421; found 568.3439.` The source is positive mode; reported error 3.1 ppm.

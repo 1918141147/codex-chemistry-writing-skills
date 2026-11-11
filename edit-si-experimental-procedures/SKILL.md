@@ -1,6 +1,6 @@
 ---
 name: edit-si-experimental-procedures
-description: Rewrite Chinese, English, or mixed-language organic synthesis records into publication-ready Supporting Information procedures; extract Scheme-ready Reagents and conditions; and standardize NMR/HRMS data from Word, PDF, or instrument reports into Journal of Medicinal Chemistry characterization text. Use for a single compound, a compound series, a General Procedure, or combined procedure/Scheme/characterization output; preserve recorded chemistry and analytical evidence, and never invent missing data.
+description: Write Journal of Medicinal Chemistry Supporting Information for organic synthesis. Standardize experimental procedures, Scheme conditions, and NMR/HRMS characterization. Assemble or update Word SI with compound-grouped spectra, HRMS report tables, and X-ray crystallographic entries using the author’s template and recorded data.
 ---
 
 # Edit SI Experimental Procedures
@@ -8,6 +8,10 @@ description: Rewrite Chinese, English, or mixed-language organic synthesis recor
 ## Objective
 
 Convert raw organic synthesis notes into consistent manuscript-ready SI prose. Edit the account of what was actually done; do not optimize, reconstruct, or silently correct the experiment.
+
+## Word SI documents
+
+When creating or updating an SI Word file, read [references/jmc-si-word.md](references/jmc-si-word.md) for the document template, spectrum and HRMS figures, automatic Figure S numbering, and crystal data. Use the author’s latest SI as the layout baseline. For a figure- or crystal-only request, apply the relevant Word guidance without rewriting synthesis or characterization text.
 
 ## Core workflow
 
