@@ -1,0 +1,4 @@
+interface:
+  display_name: "Edit Chemistry SI Procedures"
+  short_description: "Standardize synthesis procedures and Scheme conditions"
+  default_prompt: "Use $edit-si-experimental-procedures to rewrite these organic synthesis notes for SI and, when requested, extract Scheme-ready Reagents and conditions."

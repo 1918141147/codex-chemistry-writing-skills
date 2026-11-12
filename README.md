@@ -8,12 +8,21 @@
 
 两个 Skill 均采用证据优先原则：以作者指定的最新稿件、原始实验记录、谱图、仪器报告和药理数据为事实依据；不补写来源中不存在的条件、数值、结构、机制或结论。
 
+### 版本
+
+| 版本 | 位置 | 状态与说明 |
+| --- | --- | --- |
+| 原始发布版 | 仓库根目录中的两个 Skill 文件夹 | 保留不变，用于回溯首次发布内容 |
+| [`1.1`](./1.1/) | `1.1/` | 当前最新版；SI Skill 新增 HPLC 纯度报告映射、统一表格、双报告分页和完整性核验流程 |
+
+后续更新将继续创建 `1.2`、`1.3` 等独立目录，不覆盖已经发布的版本。版本 1.1 的完整变更和安装路径见 [`1.1/README.md`](./1.1/README.md)。
+
 ### 包含的 Skills
 
 | Skill | 适用任务 | 主要产出 |
 | --- | --- | --- |
-| [`jmc-manuscript-workflow`](./jmc-manuscript-workflow/) | 天然产物半合成、类似物优化、SAR、药理验证以及 JMC Word 手稿的新稿撰写、续修和数据核对 | 主文结构与论证、Introduction、Results and Discussion、SAR、药理叙事、图表/图注同步、引用与 Word 格式检查 |
-| [`edit-si-experimental-procedures`](./edit-si-experimental-procedures/) | 中文、英文或中英混合的合成记录、Scheme 条件、NMR/HRMS 数据和 SI Word 文档 | 规范化实验步骤、General Procedures、Scheme Reagents and conditions、JMC 表征段落、谱图/HRMS 编排和晶体学条目 |
+| [`jmc-manuscript-workflow`](./1.1/jmc-manuscript-workflow/) | 天然产物半合成、类似物优化、SAR、药理验证以及 JMC Word 手稿的新稿撰写、续修和数据核对 | 主文结构与论证、Introduction、Results and Discussion、SAR、药理叙事、图表/图注同步、引用与 Word 格式检查 |
+| [`edit-si-experimental-procedures`](./1.1/edit-si-experimental-procedures/) | 中文、英文或中英混合的合成记录、Scheme 条件、NMR/HRMS、HPLC 纯度报告和 SI Word 文档 | 规范化实验步骤、General Procedures、Scheme Reagents and conditions、JMC 表征段落、谱图/HRMS、HPLC 纯度报告和晶体学条目 |
 
 ### 如何选择
 
@@ -79,6 +88,7 @@
 
 - 以作者最新 SI Word 文件为版式基准，按化合物组织合成、表征、NMR 和 HRMS 证据。
 - 支持谱图裁切与插入、自动 `Figure S` 编号、HRMS 谱图与报告表格的组合编排。
+- 支持 HPLC 纯度报告的 SI 编号映射、五列表格统一、图表成组重排，以及每页两个报告的自然分页。
 - 支持 X-ray crystallographic data、精修参数和 CIF 对应信息的整理。
 - 完成后检查分页、标题层级、图注、字段、目录、图片清晰度及文档完整性。
 
@@ -108,6 +118,10 @@
 
 ```text
 codex-chemistry-writing-skills/
+├── 1.1/
+│   ├── README.md
+│   ├── edit-si-experimental-procedures/
+│   └── jmc-manuscript-workflow/
 ├── edit-si-experimental-procedures/
 │   ├── SKILL.md
 │   ├── agents/openai.yaml
@@ -136,6 +150,13 @@ codex-chemistry-writing-skills/
 https://github.com/1918141147/codex-chemistry-writing-skills
 ```
 
+最新版子目录为：
+
+```text
+1.1/jmc-manuscript-workflow
+1.1/edit-si-experimental-procedures
+```
+
 #### 方法二：手动安装
 
 1. 克隆或下载本仓库。
@@ -162,12 +183,12 @@ $edit-si-experimental-procedures 将这些中文实验记录整理为 JMC SI 英
 先用 $jmc-manuscript-workflow 完成主文和 SAR，再用 $edit-si-experimental-procedures 按相同化合物编号更新 SI Word；最后检查 Scheme、方法和表征是否一致。
 ```
 
-### 本次更新重点
+### 1.1 更新重点
 
-- 主文 Skill 增加新稿、续修和先审后改三种模式，以及更严格的来源权威和局部修改规则。
-- 完善 JMC 章节衔接、半合成叙事、SAR、药理证据层级、筛选数据和 Word 格式检查。
-- SI Skill 新增完整的 Word SI 编排规范，包括按化合物组织谱图、HRMS 报告表格、自动 Figure S 编号和晶体学条目。
-- 加强主文、Scheme、实验步骤、NMR/HRMS、图表和结论之间的交叉一致性检查。
+- 保留仓库根目录中的原始发布版，新增独立的 `1.1/` 项目目录。
+- SI Skill 新增 HPLC 纯度报告流程：正式 SI 编号与样品号映射、色谱图/表格/图注成组处理、五列表格统一和按 SI 编号排序。
+- 默认每页两个可读报告，不使用手动分页符强制配对，并检查缺失报告、图表错配、分页和 `References` 边界。
+- 主文 Skill 与 SI Skill 的其他规则保持不变。
 
 ### 科学与使用边界
 
@@ -187,12 +208,21 @@ This repository contains two Codex skills for medicinal chemistry, natural-produ
 
 Both skills are evidence-first: the author's accepted manuscript, raw laboratory records, spectra, instrument reports, and pharmacology data govern factual content. Missing conditions, values, structures, mechanisms, and conclusions must not be invented.
 
+### Versions
+
+| Version | Location | Status and scope |
+| --- | --- | --- |
+| Original release | Skill folders at the repository root | Preserved unchanged for release history |
+| [`1.1`](./1.1/) | `1.1/` | Latest version; adds HPLC purity-report mapping, standardized tables, two-report pagination, and integrity checks to the SI skill |
+
+Future updates will use new directories such as `1.2` and `1.3` instead of overwriting published versions. See [`1.1/README.md`](./1.1/README.md) for the complete version 1.1 scope and installation paths.
+
 ### Included skills
 
 | Skill | Best for | Main outputs |
 | --- | --- | --- |
-| [`jmc-manuscript-workflow`](./jmc-manuscript-workflow/) | New drafts, continuing revisions, SAR, pharmacology, Word editing, and reconciliation of natural-product analogue manuscripts | Manuscript architecture, Introduction, Results and Discussion, SAR, pharmacology narrative, figure/table synchronization, citations, and Word QA |
-| [`edit-si-experimental-procedures`](./edit-si-experimental-procedures/) | Raw synthesis records, Scheme conditions, NMR/HRMS data, and SI Word assembly | Experimental procedures, General Procedures, Scheme Reagents and conditions, JMC characterization, compound-grouped spectra/HRMS, and crystallographic entries |
+| [`jmc-manuscript-workflow`](./1.1/jmc-manuscript-workflow/) | New drafts, continuing revisions, SAR, pharmacology, Word editing, and reconciliation of natural-product analogue manuscripts | Manuscript architecture, Introduction, Results and Discussion, SAR, pharmacology narrative, figure/table synchronization, citations, and Word QA |
+| [`edit-si-experimental-procedures`](./1.1/edit-si-experimental-procedures/) | Raw synthesis records, Scheme conditions, NMR/HRMS data, HPLC purity reports, and SI Word assembly | Experimental procedures, General Procedures, Scheme Reagents and conditions, JMC characterization, compound-grouped spectra/HRMS, HPLC purity reports, and crystallographic entries |
 
 ### Choosing a skill
 
@@ -215,7 +245,8 @@ Both skills are evidence-first: the author's accepted manuscript, raw laboratory
 - Produces concise General Procedures and compound-specific procedures without silently supplying conventional but unrecorded operations.
 - Extracts Scheme conditions from the same experimental record while excluding workup and purification details by default.
 - Matches NMR and HRMS evidence to compounds, preserves source precision, and checks formulas, adducts, calculated/found *m/z*, and ppm error.
-- Uses the author's latest SI Word document as the layout baseline for compound-grouped spectra, HRMS report tables, automatic Figure S numbering, and X-ray crystallographic entries.
+- Uses the author's latest SI Word document as the layout baseline for compound-grouped spectra, HRMS report tables, automatic Figure S numbering, HPLC purity reports, and X-ray crystallographic entries.
+- Maps raw HPLC reports to current SI identifiers, standardizes five-column Peak List tables, keeps each chromatogram/table/caption together, and aims for two reports per page without adding manual page breaks.
 
 ### Recommended source package
 
@@ -232,6 +263,10 @@ Both skills are evidence-first: the author's accepted manuscript, raw laboratory
 
 ```text
 codex-chemistry-writing-skills/
+├── 1.1/
+│   ├── README.md
+│   ├── edit-si-experimental-procedures/
+│   └── jmc-manuscript-workflow/
 ├── edit-si-experimental-procedures/
 │   ├── SKILL.md
 │   ├── agents/openai.yaml
@@ -256,6 +291,13 @@ Invoke `$skill-installer` in Codex, provide this repository, and specify the des
 
 ```text
 https://github.com/1918141147/codex-chemistry-writing-skills
+```
+
+The latest skill subdirectories are:
+
+```text
+1.1/jmc-manuscript-workflow
+1.1/edit-si-experimental-procedures
 ```
 
 #### Option 2: Manual installation
@@ -284,12 +326,12 @@ $edit-si-experimental-procedures Convert these mixed-language laboratory records
 Use $jmc-manuscript-workflow for the main text and SAR, then use $edit-si-experimental-procedures to update the SI Word file with the same compound numbering and cross-check the Scheme, procedures, and characterization.
 ```
 
-### Highlights of this update
+### Version 1.1 highlights
 
-- Adds explicit new-draft, continuing-revision, and review-first modes to the manuscript workflow.
-- Expands JMC transitions, semisynthesis logic, SAR, pharmacology evidence levels, screening-data checks, and Word QA.
-- Adds full SI Word guidance for compound-grouped spectra, HRMS report tables, automatic Figure S numbering, and crystallographic entries.
-- Strengthens cross-document consistency checks across the manuscript, Schemes, procedures, NMR/HRMS, figures, and conclusions.
+- Preserves the original release at the repository root and adds a self-contained `1.1/` project directory.
+- Adds HPLC purity-report crosswalks, atomic chromatogram/table/caption handling, standardized five-column tables, and SI-number sorting to the SI skill.
+- Aims for two readable reports per page without manual page breaks and verifies missing reports, image/table pairing, pagination, and the `References` boundary.
+- Leaves the manuscript skill and all other SI rules unchanged.
 
 ### Scientific boundaries
 
